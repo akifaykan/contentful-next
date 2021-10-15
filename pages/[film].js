@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function filmPage({ film }) {
+    const datex = new Date(film.date)
     return (
         <>
             <Head>
@@ -23,6 +24,7 @@ export default function filmPage({ film }) {
                         allowFullScreen
                     ></iframe>
                 </div>
+                <span>Tarih: {datex.toLocaleDateString()}</span>
                 <div className={styles.grid}>{film.aciklama}</div>
                 <h5>
                     <Link href="/">
@@ -54,6 +56,7 @@ export async function getStaticProps({ params }) {
                                 slug
                                 videoUrl
                                 aciklama
+                                date
                             }
                         }
                     }

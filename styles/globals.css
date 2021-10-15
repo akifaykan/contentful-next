@@ -11,7 +11,12 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    color: #d20bcf;
+}
+
 * {
+    list-style-type: none;
     box-sizing: border-box;
 }
 
