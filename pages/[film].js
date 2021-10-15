@@ -74,7 +74,6 @@ export async function getStaticProps({ params }) {
     }
 
     const { data } = await result.json();
-
     const [filmData] = data.filmCollection.items;
 
     return {
