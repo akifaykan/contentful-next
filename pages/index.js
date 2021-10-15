@@ -50,7 +50,7 @@ export async function getStaticProps() {
             body: JSON.stringify({
                 query: `
                     query {
-                        filmCollection {
+                        filmCollection (order:date_DESC) {
                             items {
                                 baslik
                                 slug
