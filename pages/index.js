@@ -15,7 +15,7 @@ export default function Home({ filmler }) {
                 <h1 className={styles.title}>Contentful + nextjs</h1>
                 <div className={styles.grid}>
                     <ul>
-                        {filmler.map(({ baslik, slug, videoUrl, aciklama }) => {
+                        {filmler.map(({ baslik, slug, date, aciklama }) => {
                             return (
                                 <li key={slug}>
                                     <h3>
@@ -23,6 +23,8 @@ export default function Home({ filmler }) {
                                             <a>{baslik}</a>
                                         </Link>
                                     </h3>
+                                    <span>{date}</span>
+                                    <p>{aciklama}</p>
                                 </li>
                             );
                         })}
@@ -49,7 +51,7 @@ export async function getStaticProps() {
                             items {
                                 baslik
                                 slug
-                                videoUrl
+                                date
                                 aciklama
                             }
                         }

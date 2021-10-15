@@ -11,16 +11,16 @@ export default function filmPage({ film }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
-                <h1 className={styles.title}>{film.baslik}</h1>
+                <h1 className="mt4 titlex">{film.baslik}</h1>
                 <div className="video">
                     <iframe
                         width="560"
                         height="315"
                         src={film.videoUrl}
                         title={film.baslik}
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                 </div>
                 <div className={styles.grid}>{film.aciklama}</div>
