@@ -3,8 +3,6 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home({ filmler }) {
-    
-
     return (
         <>
             <Head>
@@ -18,7 +16,7 @@ export default function Home({ filmler }) {
                 <div className={styles.grid}>
                     <ul>
                         {filmler.map(({ baslik, slug, date, aciklama }) => {
-                            const datex = new Date(date)
+                            const datex = new Date(date);
                             return (
                                 <li key={slug}>
                                     <h3>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function filmPage({ film }) {
-    const datex = new Date(film.date)
+    const datex = new Date(film.date);
     return (
         <>
             <Head>
