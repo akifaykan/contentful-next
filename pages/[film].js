@@ -28,7 +28,7 @@ export default function filmPage({ film }) {
                 <div className={styles.grid}>{film.aciklama}</div>
                 <h5>
                     <Link href="/">
-                        <a>&larr; Anasayfaya Dön</a>
+                        <a>&larr; [Anasayfaya Dön]</a>
                     </Link>
                 </h5>
             </main>
