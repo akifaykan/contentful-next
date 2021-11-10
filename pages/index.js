@@ -25,9 +25,11 @@ export default function Home({ filmler }) {
                                         </Link>
                                     </h3>
                                     <span>Tarih: {datex.toLocaleDateString()}</span>
-                                    <p dangerouslySetInnerHTML={{
-                                        __html: aciklama,
-                                    }}></p>
+                                    <p
+                                        dangerouslySetInnerHTML={{
+                                            __html: recipe.title,
+                                        }}
+                                    />
                                 </li>
                             );
                         })}
