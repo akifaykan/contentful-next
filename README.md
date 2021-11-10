@@ -1,3 +1,3 @@
 contentful-nextjs
 
-Demo : https://kryex-test.netlify.app/
+Demo : https://contentful-next.netlify.app/
